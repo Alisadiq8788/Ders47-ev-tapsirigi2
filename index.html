@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+          * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  .todoList {
+    width: 300px;
+    padding: 10px;
+    border: 2px solid red;
+    margin: auto;
+  }
+  .todo-header {
+    width: 100%;
+    display: flex;
+  }
+  .todo-header input {
+    flex: 6;
+  }
+  .todo-header button {
+    flex: 1;
+  }
+  .todo-body {
+  min-height: 300px;
+  border: 3px solid green;
+  margin-top: 10px;
+  padding: 10px;
+}
+.todo-body .item {
+  width: 100%;
+  border: 3px solid black;
+}
+    </style>
+</head>
+<body>
+    <div class="todoList">
+  <div class="todo-header">
+    <input type="text" />
+    <button onclick="add()">Add</button>
+  </div>
+  <div class="todo-body">
+    <p class="item" title="hello">hello</p>
+  </div>
+</div>
+<script src="index.js"></script>
+</body>
+</html>
